@@ -1,0 +1,58 @@
+{
+	"classes": [{
+		"package": "com.pmr",
+		"name": "TestClass",
+		"final": false,
+		"accessModifier": "public",
+		"variables": [{
+				"accessModifier": "public",
+				"static": false,
+				"final": false,
+				"type": "int",
+				"name": "var1",
+				"initialValue": 0
+			},
+			{
+				"accessModifier": "private",
+				"static": true,
+				"final": true,
+				"type": "String",
+				"name": "var2",
+				"initialValue": "default"
+			}
+		],
+		"methods": [{
+				"accessModifier": "public",
+				"static": false,
+				"final": false,
+				"returnType": "int",
+				"name": "add",
+				"args": [{
+						"type": "int",
+						"name": "arg1"
+					},
+					{
+						"type": "int",
+						"name": "arg2"
+					}
+				]
+			},
+			{
+				"accessModifier": "public",
+				"static": true,
+				"final": true,
+				"returnType": "int",
+				"name": "substract",
+				"args": [{
+						"type": "int",
+						"name": "arg1"
+					},
+					{
+						"type": "int",
+						"name": "arg2"
+					}
+				]
+			}
+		]
+	}]
+}
