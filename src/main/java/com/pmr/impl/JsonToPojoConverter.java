@@ -17,24 +17,23 @@ import com.pmr.common.RootNode;
  *
  */
 public class JsonToPojoConverter implements ConfigToPojoConverter {
+	private String filePath;
 
-	/* (non-Javadoc)
-	 * @see com.pmr.ConfigFileParserAndConverter#convert()
-	 */
+	public JsonToPojoConverter(String filePath) {
+		this.filePath = filePath;
+	}
+	
 	@Override
-	public void convert(String path) {
+	public RootNode convert() {
 		ObjectMapper mapper = new ObjectMapper();
 		try {
-			RootNode classes = mapper.readValue(new File(path), RootNode.class);
+			RootNode classes = mapper.readValue(new File(this.filePath), RootNode.class);
 			System.out.println(classes.toString());
+			return classes;
 		} catch (IOException e) {
 			System.out.println("Error occurred"+ e);
 		}
-				
-	}
-	
-	public static void main(String args[]) {
-		JsonToPojoConverter converter = new JsonToPojoConverter();
-		converter.convert("/home/pmr/projects/CodeGenerator/src/main/resources/config.json");
+		return null;
+			
 	}
 }
