@@ -1,22 +1,22 @@
 {
 	"classes": [{
 		"packageName": "com.pmr",
-		"name": "TestClass",
+		"name": "MyFirstClass",
 		"finalClass": false,
 		"accessModifier": "public",
 		"variables": [{
 				"accessModifier": "public",
-				"staticVariable": false,
-				"finalVariable": false,
-				"type": "String",
+				"staticVariable": true,
+				"finalVariable": true,
+				"type": "boolean",
 				"name": "var1",
-				"initialValue": "str"
+				"initialValue": "false"
 			},
 			{
 				"accessModifier": "private",
 				"staticVariable": true,
 				"finalVariable": true,
-				"type": "String",
+				"type": "int",
 				"name": "var2",
 				"initialValue": 0
 			}

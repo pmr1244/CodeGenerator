@@ -17,13 +17,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class RootNode {
 	@JsonProperty("classes")
-	private List<Classes> classes;
+	private List<ClassSchema> classes;
 
-	public List<Classes> getClasses() {
+	public List<ClassSchema> getClasses() {
 		return classes;
 	}
 
-	public void setClasses(List<Classes> classes) {
+	public void setClasses(List<ClassSchema> classes) {
 		this.classes = classes;
 	}
 

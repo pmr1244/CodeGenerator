@@ -15,7 +15,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  */
 @JsonInclude(JsonInclude.Include.NON_ABSENT)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Classes {
+public class ClassSchema {
 	@JsonProperty("packageName")
 	private String packageName;
 	private String name;
