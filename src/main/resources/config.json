@@ -9,7 +9,7 @@
 				"staticVariable": true,
 				"finalVariable": true,
 				"type": "boolean",
-				"name": "var1",
+				"name": "boolVar",
 				"initialValue": "false"
 			},
 			{
@@ -17,15 +17,23 @@
 				"staticVariable": true,
 				"finalVariable": true,
 				"type": "int",
-				"name": "var2",
+				"name": "intVar",
 				"initialValue": 0
+			},
+			{
+				"accessModifier": "private",
+				"staticVariable": false,
+				"finalVariable": false,
+				"type": "String",
+				"name": "strVar",
+				"initialValue": "initialval"
 			}
 		],
 		"methods": [{
 				"accessModifier": "public",
 				"staticMethod": false,
 				"finalMethod": false,
-				"returnType": "int",
+				"returnType": "Integer",
 				"name": "add",
 				"args": [{
 						"type": "int",
@@ -41,7 +49,7 @@
 				"accessModifier": "public",
 				"staticMethod": true,
 				"finalMethod": true,
-				"returnType": "int",
+				"returnType": "Boolean",
 				"name": "substract",
 				"args": [{
 						"type": "int",
